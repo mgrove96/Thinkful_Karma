@@ -58,10 +58,9 @@ body {
 }
 
 .content {
-	padding: 0px 15px;
-	box-sizing: border-box;
-	width: 970px;
-	margin: 0 auto;
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
 }
 
 .introduction {
@@ -101,10 +100,66 @@ button {
     font-size: 1.125rem;
 }
 
+button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
+
 .introduction .buttons {
     color: white;
     text-align: center;
     margin-top: 1.563rem;
+}
+
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+
+.cases .devices {
+    width: 33.3%;
+    display: inline-block;
+    /* styles to assist with debugging */
+}
+
+
+.flexdiv {
+	display: flex;
+}
+
+.caption > h3{
+	font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
+}
+
+
+.cases .content {
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+
+.cases h2 {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+ul, menu, dir {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
 }
 
 @media (min-width: 48rem) {
